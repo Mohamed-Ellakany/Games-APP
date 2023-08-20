@@ -1,0 +1,135 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #272b30;
+  font-family: "Comfortaa", cursive;
+}
+.logo-nav {
+  width: 50px;
+}
+
+header {
+  background-image: url(../imgs/wraper.png);
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+nav {
+  top: -50%;
+}
+nav {
+  background-color: #3a497b !important;
+}
+nav .nav-item {
+  font-size: 12px;
+}
+nav .nav-item .active {
+  color: #6e8bec !important;
+}
+
+.nav-item:hover a {
+  color: #6e8bec !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.free {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #0d6efd;
+}
+.cafooter {
+  background-color: #32383e;
+  font-size: 10px;
+  font-weight: 700;
+}
+figcaption p {
+  color: #797b7f;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card {
+  filter: grayscale(0.8);
+  transition: filter 0.5s, transform 0.5s;
+}
+
+.card:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+.title {
+  font-size: 26px;
+}
+.col-8 p {
+  margin-bottom: 20px;
+}
+.col-8 p span {
+  background-color: #0dcaf0;
+  font-size: 12px;
+  font-weight: 700;
+}
+.btn-white {
+  color: #797b7f;
+}
+.btn-white:hover {
+  color: #cbcdd1;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.load {
+  background-color: #272b30;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  cursor: pointer;
+}
+
